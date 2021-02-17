@@ -19,3 +19,8 @@
 - Business Layer
 - Persistance Layer
 - Data Layer
+
+# Tags used to divide html into parts
+
+- section-tag defines a section in a document.Usually We name section with ID.The section tag is used to separate large part
+- div - tag defines a division or a section in an HTML document.
