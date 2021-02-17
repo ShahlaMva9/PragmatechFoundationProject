@@ -5,7 +5,8 @@
 - git commit -m ""
 - git push
 - git pull
-  ## Frontend and Backend technology
+
+# Frontend and Backend technology
 
 ### Frontend part - UI(User-Interface),Presentation Layer,Client Side
 
