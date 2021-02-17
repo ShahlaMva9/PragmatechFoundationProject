@@ -1,0 +1,12 @@
+/* start Psedo element*/
+p::first-line {
+  color: red;
+}
+p::first-letter {
+  color: green;
+  font-size: 30px;
+}
+p::selection {
+  color: blue;
+}
+/* end psedo element*/
