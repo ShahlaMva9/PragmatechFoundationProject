@@ -6,17 +6,16 @@
 - git push
 - git pull
 
-# Frontend and Backend technology
+# Frontend and Backend technology
 
-### Frontend part - UI(User-Interface),Presentation Layer,Client Side
+## Frontend part - UI(User-Interface),Presentation Layer,Client Side
 
-- HTML (Hypertext Markup Language)
-- CSS(Cascading Style Sheet.)
-- JS(JavaScript)
-  Frameworks : Bootstrap,
+- HTML (Hypertext Markup Language)
+- CSS(Cascading Style Sheet.)
+- JS(JavaScript)
 
-### Backend part
+## Backend part
 
-- Business Layer
-- Persistance Layer
-- Data Layer
+- Business Layer
+- Persistance Layer
+- Data Layer
