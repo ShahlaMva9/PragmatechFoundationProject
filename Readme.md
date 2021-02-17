@@ -25,6 +25,7 @@
 - section-tag defines a section in a document.Usually We name section with ID.The section tag is used to separate large part
 - div - tag defines a division or a section in an HTML document.
 
+<<<<<<< HEAD
 # Basic Css tags
 
 1. /_ Comment _/
@@ -53,3 +54,5 @@
 - bold
 
 14. font-size (px,em,rem,%)
+=======
+>>>>>>> 99e13dea741452cba64be956b30c92348e4c33cb
