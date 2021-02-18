@@ -1,0 +1,108 @@
+body {
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+} /* Container */
+.container {
+  width: 85%;
+  max-width: 1143px;
+  margin: 0 auto;
+}
+/* codes for header section */
+#header {
+  height: 70px;
+  border-bottom: 1px solid #eceef2;
+  background-color: #fff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*start Header-navbar */
+.header-navbar {
+  display: flex;
+  width: 70%;
+  align-items: center;
+}
+/* logo*/
+.logo {
+  width: 114px;
+  padding: 20px;
+}
+.header-nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav li {
+  padding: 25px;
+
+  position: relative;
+}
+.header-nav a {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #212631;
+  text-decoration: none;
+  font-size: 16 px;
+}
+/*header-nav nth-child*/
+.header-nav li:nth-child(1) {
+  border-left: 1px solid #eceef2;
+  border-right: 1px solid #eceef2;
+}
+.header-nav li:nth-child(2) {
+  border-right: 1px solid #eceef2;
+}
+
+.header-nav li:nth-child(3) {
+  border-bottom: 4px solid #4bb92f;
+  border-right: 1px solid #eceef2;
+}
+.header-nav li:nth-child(3) a:hover {
+  color: #4bb92f;
+  transition: 0.2;
+}
+.header-nav li:nth-child(4) {
+  border-bottom: 4px solid #ff8700;
+  border-right: 1px solid #eceef2;
+}
+.header-nav li:nth-child(4) a:hover {
+  color: #ff8700;
+  transition: 0.2s;
+}
+.header-nav li:nth-child(5) {
+  border-bottom: 4px solid #0078ff;
+  border-right: 1px solid #eceef2;
+}
+.header-nav li:nth-child(5) a:hover {
+  color: #0078ff;
+  transition: 0.2s;
+}
+.header-nav li:nth-child(6) {
+  border-bottom: 4px solid #8d00ff;
+  border-right: 1px solid #eceef2;
+}
+.header-nav li:nth-child(6) a:hover {
+  color: #8d00ff;
+  transition: 0.2s;
+}
+
+/* end header-navbar */
+/* start heder-btns*/
+.header-btns {
+  width: 10%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-btns button {
+  border: none;
+  outline: none;
+  background-color: white;
+}
+/* end header-btns */
+.a {
+  height: 1000px;
+}
