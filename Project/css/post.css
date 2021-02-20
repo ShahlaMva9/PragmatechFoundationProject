@@ -1,0 +1,46 @@
+.post {
+  transition: all 0.3s ease;
+}
+/*post meta */
+.post-meta {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.post-meta .btn {
+  margin-right: 20px;
+}
+/*post-title*/
+.post-title {
+  line-height: 1.8em;
+}
+.post-title a {
+  font-weight: 600;
+  font-size: 1.3em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.post-title-white a {
+  color: white;
+}
+.post-title-white a:hover {
+  border-bottom: 2px solid white;
+  transition: 0.3s;
+}
+.post-title-black a {
+  color: #212631;
+}
+.post-title-black a:hover {
+  border-bottom: 2px solid black;
+  transition: 0.3s;
+}
+/* post Dates */
+.post-date {
+  font-size: 1em;
+  font-weight: 500;
+}
+.post-date-light {
+  color: #eceef2;
+}
+.post-date-dark {
+  color: #3d455c;
+}

@@ -4,13 +4,13 @@
   border-radius: 2px;
   border: none;
   outline: none;
-  padding: 3px 5px;
+  padding: 5px 8px;
   transition: all 0.2s ease;
+  font-size: 1.2em;
+  color: white;
+  transition: all 0.3s ease;
 }
-.btn:hover {
-  opacity: 0.9;
-  transition: 0.3s;
-}
+
 .btn a {
   color: #fff;
   text-decoration: none;
@@ -24,4 +24,11 @@
 /*jquery btn */
 .jquery-btn {
   background-color: #8d00ff;
+}
+/* web design btn */
+.webdesign-btn {
+  background-color: #4bb92f;
+}
+.css-btn {
+  background-color: #0078ff;
 }

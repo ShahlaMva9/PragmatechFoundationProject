@@ -7,34 +7,26 @@ body {
   max-width: 1143px;
   margin: 0 auto;
 }
-/* post Dates */
-.post-date {
-  font-size: 0.9em;
+
+/* section-title */
+.section-title {
   font-weight: 600;
+  color: #212631;
+  margin: 0px 0px 15px;
+  font-size: 2.3em;
+  line-height: 1.2;
+  text-transform: capitalize;
 }
-.post-date-light {
-  color: #eceef2;
+.hover:hover {
+  opacity: 0.9;
+  transition: 0.3s ease;
 }
-/*post-title*/
-.post-title a {
-  font-weight: 600;
-  font-size: 1.5em;
-  text-decoration: none;
+.responsive-img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
 }
-.post-title-white a {
-  color: white;
-}
-.post-title-white a:hover {
-  border-bottom: 2px solid white;
-  transition: 0.3s;
-}
-.post-title-black a {
-  color: black;
-}
-.post-title-black a:hover {
-  border: 2px solid black;
-  transition: 0.3s;
-}
+
 /* codes for header section */
 #header {
   border-bottom: 1px solid #eceef2;
@@ -60,6 +52,7 @@ body {
 .header-nav ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header-nav li {
   padding: 20px;
@@ -71,7 +64,7 @@ body {
   font-weight: 500;
   color: #212631;
   text-decoration: none;
-  font-size: 16 px;
+  font-size: 16px;
   transition: all 0.3s ease;
 }
 /*header-nav nth-child*/
@@ -115,11 +108,11 @@ body {
 /* end header-navbar */
 /* start heder-btns*/
 .header-btns {
-  width: 10%;
-
+  width: 9%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 1.5em;
 }
 .header-btns button {
   border: none;
@@ -137,29 +130,34 @@ body {
   height: 400px;
   justify-content: space-between;
 }
-/* start post */
-.post {
+/* start news */
+.news {
   height: 330px;
   position: relative;
+  transition: all 0.3s ease;
 }
-/* post img*/
-.post__img {
-  width: 100%;
-  max-width: 550px;
-  height: auto;
-}
-/*post body*/
-.post-body {
+
+/*news body*/
+.news-body {
   position: absolute;
   bottom: 0px;
   padding: 30px 15px;
 }
-/* post meta*/
-.post-meta {
-  padding-bottom: 25px;
-}
-.post-meta .btn {
-  margin-right: 25px;
-}
-/*end post */
+
+/*end news */
 /*end main section*/
+
+/* start resent post */
+#resent-posts .row {
+  display: flex;
+  justify-content: space-between;
+}
+#resent-posts .col {
+  width: calc(100% / 3);
+  margin-right: 30px;
+  margin-top: 30px;
+}
+#resent-posts .col:last-child {
+  margin-right: 0;
+}
+/* end resent post */
