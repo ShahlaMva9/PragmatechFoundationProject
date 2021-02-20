@@ -7,9 +7,36 @@ body {
   max-width: 1143px;
   margin: 0 auto;
 }
+/* post Dates */
+.post-date {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.post-date-light {
+  color: #eceef2;
+}
+/*post-title*/
+.post-title a {
+  font-weight: 600;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+.post-title-white a {
+  color: white;
+}
+.post-title-white a:hover {
+  border-bottom: 2px solid white;
+  transition: 0.3s;
+}
+.post-title-black a {
+  color: black;
+}
+.post-title-black a:hover {
+  border: 2px solid black;
+  transition: 0.3s;
+}
 /* codes for header section */
 #header {
-  height: 70px;
   border-bottom: 1px solid #eceef2;
   background-color: #fff;
 }
@@ -28,14 +55,14 @@ body {
 /* logo*/
 .logo {
   width: 114px;
-  padding: 20px;
+  padding-right: 20px;
 }
 .header-nav ul {
   display: flex;
   justify-content: space-between;
 }
 .header-nav li {
-  padding: 25px;
+  padding: 20px;
 
   position: relative;
 }
@@ -45,6 +72,7 @@ body {
   color: #212631;
   text-decoration: none;
   font-size: 16 px;
+  transition: all 0.3s ease;
 }
 /*header-nav nth-child*/
 .header-nav li:nth-child(1) {
@@ -61,7 +89,6 @@ body {
 }
 .header-nav li:nth-child(3) a:hover {
   color: #4bb92f;
-  transition: 0.2;
 }
 .header-nav li:nth-child(4) {
   border-bottom: 4px solid #ff8700;
@@ -69,7 +96,6 @@ body {
 }
 .header-nav li:nth-child(4) a:hover {
   color: #ff8700;
-  transition: 0.2s;
 }
 .header-nav li:nth-child(5) {
   border-bottom: 4px solid #0078ff;
@@ -77,7 +103,6 @@ body {
 }
 .header-nav li:nth-child(5) a:hover {
   color: #0078ff;
-  transition: 0.2s;
 }
 .header-nav li:nth-child(6) {
   border-bottom: 4px solid #8d00ff;
@@ -85,7 +110,6 @@ body {
 }
 .header-nav li:nth-child(6) a:hover {
   color: #8d00ff;
-  transition: 0.2s;
 }
 
 /* end header-navbar */
@@ -95,7 +119,7 @@ body {
 
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .header-btns button {
   border: none;
@@ -103,6 +127,39 @@ body {
   background-color: white;
 }
 /* end header-btns */
-.a {
-  height: 1000px;
+/*  start main section */
+#main {
+  margin-top: 38px;
 }
+#main .row {
+  display: flex;
+
+  height: 400px;
+  justify-content: space-between;
+}
+/* start post */
+.post {
+  height: 330px;
+  position: relative;
+}
+/* post img*/
+.post__img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+}
+/*post body*/
+.post-body {
+  position: absolute;
+  bottom: 0px;
+  padding: 30px 15px;
+}
+/* post meta*/
+.post-meta {
+  padding-bottom: 25px;
+}
+.post-meta .btn {
+  margin-right: 25px;
+}
+/*end post */
+/*end main section*/
