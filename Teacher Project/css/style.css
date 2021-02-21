@@ -81,3 +81,61 @@ body {
   color: grey;
 }
 /* end header-navbar */
+/* start slider  */
+#slider {
+  height: 700px;
+  position: relative;
+}
+/* slider item */
+.slider-item {
+  width: 100%;
+  height: 100%;
+  background: url(../img/slider-img.jpg);
+  background-position: left center;
+  background-size: cover;
+  color: white;
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+.slider-item h1 {
+  font-size: 4.5em;
+  line-height: 65px;
+}
+.slider-item h3 {
+  padding: 20px 0 50px 0;
+}
+/* slider-btns */
+.btn {
+  border: none;
+  outline: none;
+}
+.slider-btns {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  transform: translate(0, -50%);
+  transition: all 0.3s ease;
+}
+.slider-btns button {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+.slider-btns i {
+  color: grey;
+}
+.main-btn {
+  padding: 10px;
+  background: #00bcd4;
+  color: white;
+  transition: all 0.3s ease;
+}
+.main-btn:hover {
+  background: black;
+}
+/* end slider */
