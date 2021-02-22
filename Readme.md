@@ -63,3 +63,9 @@
 - element, element div , p (Selects all div elements and all p elements)
 - element>element div > p Selects all p elements where the parent is a div element
 - element+element div + p Selects the first p element that are placed immediately after div elements
+
+# Week 02 - hesabat
+
+- [x] Layihəmdə 3 section tamamlandı
+- [x] Müəllimin Layihəsi qısa yolla yazıldı
+- [x] Videolar analiz edildi
