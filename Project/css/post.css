@@ -19,6 +19,10 @@
   text-decoration: none;
   transition: all 0.3s ease;
 }
+.post-title-big a {
+  font-size: 2em;
+}
+
 .post-title-white a {
   color: white;
 }
@@ -44,3 +48,4 @@
 .post-date-dark {
   color: #3d455c;
 }
+/* post-thumb */

@@ -26,3 +26,9 @@ body {
   max-width: 550px;
   height: auto;
 }
+.big-img {
+  max-width: 750px;
+}
+.small-img {
+  max-width: 93px;
+}
