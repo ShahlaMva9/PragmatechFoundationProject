@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Link Css-->
-    <link rel="stylesheet" href="../Project/css/style.css" />
     <!--Reset css-->
     <link rel="stylesheet" href="../Project/css/reset.css" />
-    <!--buttons css-->
-    <link rel="stylesheet" href="../Project/css/buttons.css" />
     <!-- Css for general tags -->
     <link rel="stylesheet" href="../Project/css/general.css" />
+    <!--layout-->
+    <link rel="stylesheet" href="../Project/css/layout.css" />
+    <!--Link Css-->
+    <link rel="stylesheet" href="../Project/css/style.css" />
+
+    <!--buttons css-->
+    <link rel="stylesheet" href="../Project/css/buttons.css" />
+
     <!--post css-->
     <link rel="stylesheet" href="../Project/css/post.css" />
     <!--Icon-->
@@ -28,11 +32,11 @@
     <section id="header" class="slide-down">
       <!--container-->
       <div class="container">
-        <div class="header-container">
+        <div class="row">
           <!--start header-navbar-->
-          <div class="header-navbar">
+          <div class="col-10 header-navbar">
             <!--logo-->
-            <div class="logo">
+            <div class="col-2 logo">
               <a href="index.html">
                 <img
                   src="/Project/img/logo.png"
@@ -42,11 +46,13 @@
               </a>
             </div>
             <!--header-nav-->
-            <div class="header-nav">
-              <ul>
+            <div class="col-8 header-nav">
+              <ul class="row">
                 <li><a href="category.html">News</a></li>
                 <li><a href="category.html">Popular</a></li>
-                <li><a href="category.html">Web Design</a></li>
+                <li>
+                  <a href="category.html">Web Design</a>
+                </li>
                 <li><a href="category.html">Javascript</a></li>
                 <li><a href="category.html">Css</a></li>
                 <li><a href="category.html">Jquery</a></li>
@@ -55,7 +61,7 @@
           </div>
           <!--end header-navbar-->
           <!--start header-btns-->
-          <div class="header-btns">
+          <div class="col-1 header-btns row">
             <!--equal-btn-->
             <div class="equal-btn">
               <button>
@@ -79,57 +85,61 @@
       <div class="container">
         <div class="row">
           <!--news-->
-          <div class="news hover">
-            <a href="blog-post.html">
-              <img
-                src="/Project/img/post-img.jpg"
-                title="news-img"
-                class="news__img responsive-img"
-              />
-            </a>
-            <!--news body-->
-            <div class="news-body">
-              <!--post meta-->
-              <div class="post-meta">
-                <!--post btn-->
-                <button class="js-btn btn hover">
-                  <a href="category.html"> Javascript</a>
-                </button>
+          <div class="col-6 hover margin-right">
+            <div class="news">
+              <a href="blog-post.html">
+                <img
+                  src="/Project/img/post-img.jpg"
+                  title="news-img"
+                  class="news__img responsive-img"
+                />
+              </a>
+              <!--news body-->
+              <div class="news-body">
+                <!--post meta-->
+                <div class="post-meta">
+                  <!--post btn-->
+                  <button class="js-btn btn hover">
+                    <a href="category.html"> Javascript</a>
+                  </button>
+                  <!--post date-->
+                  <span class="post-date post-date-light">March 27,2018</span>
+                </div>
                 <!--post date-->
-                <span class="post-date post-date-light">March 27,2018</span>
+                <h2 class="post-title post-title-white post-title-big">
+                  <a href="">
+                    Chrome Extension Protects Against JavaScript-Based CPU
+                    Side-Channel Attacks
+                  </a>
+                </h2>
               </div>
-              <!--post date-->
-              <h2 class="post-title post-title-white post-title-big">
-                <a href="">
-                  Chrome Extension Protects Against JavaScript-Based CPU
-                  Side-Channel Attacks
-                </a>
-              </h2>
             </div>
           </div>
-          <div class="news hover">
-            <a href="blog-post.html">
-              <img
-                src="/Project/img/post-img2.jpg"
-                title="news-img"
-                class="news__img responsive-img"
-              />
-            </a>
-            <!--news body-->
-            <div class="news-body">
-              <!--post meta-->
-              <div class="post-meta">
-                <!--post btn-->
-                <button class="btn jquery-btn hover">
-                  <a href="category.html"> Jquery</a>
-                </button>
+          <div class="col-6 hover">
+            <div class="news">
+              <a href="blog-post.html">
+                <img
+                  src="/Project/img/post-img2.jpg"
+                  title="news-img"
+                  class="news__img responsive-img"
+                />
+              </a>
+              <!--news body-->
+              <div class="news-body">
+                <!--post meta-->
+                <div class="post-meta">
+                  <!--post btn-->
+                  <button class="btn jquery-btn hover">
+                    <a href="category.html"> Jquery</a>
+                  </button>
+                  <!--post date-->
+                  <span class="post-date post-date-light">March 27,2018</span>
+                </div>
                 <!--post date-->
-                <span class="post-date post-date-light">March 27,2018</span>
+                <h2 class="post-title post-title-white post-title-big">
+                  <a href=""> Ask HN: Does Anybody Still Use JQuery? </a>
+                </h2>
               </div>
-              <!--post date-->
-              <h2 class="post-title post-title-white post-title-big">
-                <a href=""> Ask HN: Does Anybody Still Use JQuery? </a>
-              </h2>
             </div>
           </div>
         </div>
@@ -140,13 +150,17 @@
     <!--Start resent post-->
     <section id="resent-posts">
       <div class="container">
-        <div class="resent-post-container">
-          <div class="row">
-            <!--setion-title-->
-            <h2 class="section-title">Resent posts</h2>
+        <div class="row">
+          <div class="col-12">
+            <div class="resent-post-item">
+              <!--setion-title-->
+              <h2 class="section-title">Resent posts</h2>
+            </div>
           </div>
-          <div class="row">
-            <div class="col post">
+        </div>
+        <div class="row">
+          <div class="col-4 post">
+            <div class="resent-post-item">
               <!--post img-->
               <a href="blog-post.html">
                 <img
@@ -170,7 +184,9 @@
                 </a>
               </h2>
             </div>
-            <div class="col post">
+          </div>
+          <div class="col-4 post">
+            <div class="resent-post-item">
               <!--post img-->
               <a href="blog-post.html">
                 <img
@@ -194,7 +210,9 @@
                 </a>
               </h2>
             </div>
-            <div class="col post">
+          </div>
+          <div class="col-4 post">
+            <div class="resent-post-item">
               <!--post img-->
               <a href="blog-post.html">
                 <img
@@ -216,8 +234,10 @@
               </h2>
             </div>
           </div>
-          <div class="row">
-            <div class="col post">
+        </div>
+        <div class="row">
+          <div class="col-4 post">
+            <div class="resent-post-item">
               <!--post img-->
               <a href="blog-post.html">
                 <img
@@ -241,7 +261,9 @@
                 </a>
               </h2>
             </div>
-            <div class="col post">
+          </div>
+          <div class="col-4 post">
+            <div class="resent-post-item">
               <!--post img-->
               <a href="blog-post.html">
                 <img
@@ -262,7 +284,9 @@
                 <a href="">CSS Float: A Tutorial </a>
               </h2>
             </div>
-            <div class="col post">
+          </div>
+          <div class="col-4 post">
+            <div class="resent-post-item">
               <!--post img-->
               <a href="blog-post.html">
                 <img
@@ -290,179 +314,474 @@
       </div>
     </section>
              <!-- end resent post -->
+    <!--start post-block-->
     <section id="post-block">
-      <div class="container post-block-container">
-        <div class="left-block">
-          <div class="top-block news hover">
-            <a href="blog-post.html">
-              <img
-                src="../Project/img/post-img2.jpg"
-                title="news-img"
-                class="news__img responsive-img big-img"
-              />
-            </a>
-            <div class="news-body">
-              <!--post meta-->
-              <div class="post-meta">
-                <!--post btn-->
-                <button class="btn jquery-btn hover">
-                  <a href="category.html"> Jquery</a>
-                </button>
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <div class="top-block margin-right news hover">
+              <a href="blog-post.html">
+                <img
+                  src="../Project/img/post-img2.jpg"
+                  title="news-img"
+                  class="news__img responsive-img big-img"
+                />
+              </a>
+              <div class="news-body">
+                <!--post meta-->
+                <div class="post-meta">
+                  <!--post btn-->
+                  <button class="btn jquery-btn hover">
+                    <a href="category.html"> Jquery</a>
+                  </button>
+                  <!--post date-->
+                  <span class="post-date post-date-dark">March 27,2018</span>
+                </div>
                 <!--post date-->
-                <span class="post-date post-date-dark">March 27,2018</span>
-              </div>
-              <!--post date-->
-              <h2 class="post-title post-title-white post-title-big">
-                <a href=""> Ask HN: Does Anybody Still Use JQuery? </a>
-              </h2>
-            </div>
-          </div>
-          <div class="bottom-block">
-            <div class="row">
-              <div class="col">
-                <a href="blog-post.html">
-                  <img
-                    src="../Project/img/post-img.jpg "
-                    alt=""
-                    class="post__img responsive-img hover"
-                  />
-                </a>
-                <!--post meta-->
-                <div class="post-meta">
-                  <!--post btn-->
-                  <button class="btn css-btn hover">css</button>
-                  <!--post date-->
-                  <span class="post-date post-date-dark">March 27 ,2018</span>
-                </div>
-                <!--post-title-->
-                <h2 class="post-title post-title-black">
-                  <a href="">CSS Float: A Tutorial </a>
-                </h2>
-              </div>
-              <div class="col">
-                <!--post img-->
-                <a href="blog-post.html">
-                  <img
-                    src="../Project/img/post-img2.jpg"
-                    alt=""
-                    class="post__img responsive-img hover"
-                  />
-                </a>
-                <!--post meta-->
-                <div class="post-meta">
-                  <!--post btn-->
-                  <button class="btn webdesign-btn hover">web design</button>
-                  <!--post date-->
-                  <span class="post-date post-date-dark">March 27 ,2018</span>
-                </div>
-                <!--post-title-->
-                <h2 class="post-title post-title-black">
-                  <a href=""
-                    >Tell-A-Tool: Guide To Web Design And Development Tools
-                  </a>
-                </h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <!--post img-->
-                <a href="blog-post.html">
-                  <img
-                    src="../Project/img/post-img-3jpg.jpg"
-                    alt=""
-                    class="post__img responsive-img hover"
-                  />
-                </a>
-                <!--post meta-->
-                <div class="post-meta">
-                  <!--post btn-->
-                  <button class="btn js-btn hover">Javascript</button>
-                  <!--post date-->
-                  <span class="post-date post-date-dark">March 27 ,2018</span>
-                </div>
-                <!--post-title-->
-                <h2 class="post-title post-title-black">
-                  <a href="">
-                    Chrome Extension Protects Against JavaScript-Based CPU
-                    Side-Channel Attacks
-                  </a>
-                </h2>
-              </div>
-              <div class="col">
-                <!--post img-->
-                <a href="blog-post.html">
-                  <img
-                    src="../Project/img/post-img-4..jpg "
-                    alt=""
-                    class="post__img responsive-img hover"
-                  />
-                </a>
-                <!--post meta-->
-                <div class="post-meta">
-                  <!--post btn-->
-                  <button class="btn jquery-btn hover">Jquery</button>
-                  <!--post date-->
-                  <span class="post-date post-date-dark">March 27 ,2018</span>
-                </div>
-                <!--post-title-->
-                <h2 class="post-title post-title-black">
+                <h2 class="post-title post-title-white post-title-big">
                   <a href=""> Ask HN: Does Anybody Still Use JQuery? </a>
                 </h2>
               </div>
             </div>
-            <div class="row">
-              <div class="col">
-                <!--post img-->
-                <a href="blog-post.html">
-                  <img
-                    src="../Project/img/post-img-2.jpg"
-                    alt=""
-                    class="post__img responsive-img hover"
-                  />
-                </a>
-                <!--post meta-->
-                <div class="post-meta">
-                  <!--post btn-->
-                  <button class="btn webdesign-btn hover">web design</button>
-                  <!--post date-->
-                  <span class="post-date post-date-dark">March 27 ,2018</span>
+            <div class="bottom-block">
+              <div class="row">
+                <div class="col-6 post">
+                  <div class="resent-post-item">
+                    <!--post img-->
+                    <a href="blog-post.html">
+                      <img
+                        src="../Project/img/post-img2.jpg"
+                        alt=""
+                        class="post__img responsive-img hover"
+                      />
+                    </a>
+                    <!--post meta-->
+                    <div class="post-meta">
+                      <!--post btn-->
+                      <button class="btn webdesign-btn hover">
+                        web design
+                      </button>
+                      <!--post date-->
+                      <span class="post-date post-date-dark"
+                        >March 27 ,2018</span
+                      >
+                    </div>
+                    <!--post-title-->
+                    <h2 class="post-title post-title-black">
+                      <a href=""
+                        >Tell-A-Tool: Guide To Web Design And Development Tools
+                      </a>
+                    </h2>
+                  </div>
                 </div>
-                <!--post-title-->
-                <h2 class="post-title post-title-black">
-                  <a href="">
-                    Pagedraw UI Builder Turns Your Website Design Mockup Into
-                    Code Automatically
-                  </a>
-                </h2>
+                <div class="col-6 post">
+                  <div class="resent-post-item">
+                    <!--post img-->
+                    <a href="blog-post.html">
+                      <img
+                        src="../Project/img/post-img2.jpg"
+                        alt=""
+                        class="post__img responsive-img hover"
+                      />
+                    </a>
+                    <!--post meta-->
+                    <div class="post-meta">
+                      <!--post btn-->
+                      <button class="btn webdesign-btn hover">
+                        web design
+                      </button>
+                      <!--post date-->
+                      <span class="post-date post-date-dark"
+                        >March 27 ,2018</span
+                      >
+                    </div>
+                    <!--post-title-->
+                    <h2 class="post-title post-title-black">
+                      <a href=""
+                        >Tell-A-Tool: Guide To Web Design And Development Tools
+                      </a>
+                    </h2>
+                  </div>
+                </div>
               </div>
-              <div class="col">
-                <!--post img-->
-                <a href="blog-post.html">
-                  <img
-                    src="../Project/img/post-img-3jpg.jpg"
-                    alt=""
-                    class="post__img responsive-img hover"
-                  />
-                </a>
-                <!--post meta-->
-                <div class="post-meta">
-                  <!--post btn-->
-                  <button class="btn js-btn hover">Javascript</button>
-                  <!--post date-->
-                  <span class="post-date post-date-dark">March 27 ,2018</span>
+              <div class="row">
+                <div class="col-6 post">
+                  <div class="resent-post-item">
+                    <!--post img-->
+                    <a href="blog-post.html">
+                      <img
+                        src="../Project/img/post-img-3jpg.jpg"
+                        alt=""
+                        class="post__img responsive-img hover"
+                      />
+                    </a>
+                    <!--post meta-->
+                    <div class="post-meta">
+                      <!--post btn-->
+                      <button class="btn js-btn hover">Javascript</button>
+                      <!--post date-->
+                      <span class="post-date post-date-dark"
+                        >March 27 ,2018</span
+                      >
+                    </div>
+                    <!--post-title-->
+                    <h2 class="post-title post-title-black">
+                      <a href="">
+                        Chrome Extension Protects Against JavaScript-Based CPU
+                        Side-Channel Attacks
+                      </a>
+                    </h2>
+                  </div>
                 </div>
-                <!--post-title-->
-                <h2 class="post-title post-title-black">
-                  <a href="">
-                    Chrome Extension Protects Against JavaScript-Based CPU
-                    Side-Channel Attacks
+                <div class="col-6 post">
+                  <div class="resent-post-item">
+                    <!--post img-->
+                    <a href="blog-post.html">
+                      <img
+                        src="../Project/img/post-img-4..jpg "
+                        alt=""
+                        class="post__img responsive-img hover"
+                      />
+                    </a>
+                    <!--post meta-->
+                    <div class="post-meta">
+                      <!--post btn-->
+                      <button class="btn jquery-btn hover">Jquery</button>
+                      <!--post date-->
+                      <span class="post-date post-date-dark"
+                        >March 27 ,2018</span
+                      >
+                    </div>
+                    <!--post-title-->
+                    <h2 class="post-title post-title-black">
+                      <a href=""> Ask HN: Does Anybody Still Use JQuery? </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 post">
+                  <div class="resent-post-item">
+                    <!--post img-->
+                    <a href="blog-post.html">
+                      <img
+                        src="../Project/img/post-img-2.jpg"
+                        alt=""
+                        class="post__img responsive-img hover"
+                      />
+                    </a>
+                    <!--post meta-->
+                    <div class="post-meta">
+                      <!--post btn-->
+                      <button class="btn webdesign-btn hover">
+                        web design
+                      </button>
+                      <!--post date-->
+                      <span class="post-date post-date-dark"
+                        >March 27 ,2018</span
+                      >
+                    </div>
+                    <!--post-title-->
+                    <h2 class="post-title post-title-black">
+                      <a href="">
+                        Pagedraw UI Builder Turns Your Website Design Mockup
+                        Into Code Automatically
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+                <div class="col-6 post">
+                  <div class="resent-post-item">
+                    <!--post img-->
+                    <a href="blog-post.html">
+                      <img
+                        src="../Project/img/post-img-3jpg.jpg"
+                        alt=""
+                        class="post__img responsive-img hover"
+                      />
+                    </a>
+                    <!--post meta-->
+                    <div class="post-meta">
+                      <!--post btn-->
+                      <button class="btn js-btn hover">Javascript</button>
+                      <!--post date-->
+                      <span class="post-date post-date-dark"
+                        >March 27 ,2018</span
+                      >
+                    </div>
+                    <!--post-title-->
+                    <h2 class="post-title post-title-black">
+                      <a href="">
+                        Chrome Extension Protects Against JavaScript-Based CPU
+                        Side-Channel Attacks
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="most-read">
+              <div class="row">
+                <!--setion-title-->
+                <h2 class="section-title">Most Read</h2>
+              </div>
+              <div class="row post-widget">
+                <div class="col-3 post-widget-img hover">
+                  <img
+                    src="../Project/img/small-img.jpg
+                  "
+                    alt=""
+                    class="responsive-img small-img"
+                  />
+                </div>
+                <div class="col-9 post-widget-body">
+                  <h2 class="post-title post-title-black">
+                    <a href="">
+                      Tell-A-Tool: Guide To Web Design And Development Tools
+                    </a>
+                  </h2>
+                </div>
+              </div>
+              <div class="row post-widget">
+                <div class="col-3 post-widget-img hover">
+                  <img
+                    src="../Project/img/Без названия.jpg"
+                    alt=""
+                    class="responsive-img small-img"
+                  />
+                </div>
+                <div class="col-9 post-widget-body">
+                  <h2 class="post-title post-title-black">
+                    <a href="">
+                      Pagedraw UI Builder Turns Your Website Design Mockup Into
+                      Code Automatically
+                    </a>
+                  </h2>
+                </div>
+              </div>
+              <div class="row post-widget">
+                <div class="col-3 post-widget-img hover">
+                  <img
+                    src="../Project/img/Без названия (1).jpg"
+                    alt=""
+                    class="responsive-img small-img"
+                  />
+                </div>
+                <div class="col-9 post-widget-body">
+                  <h2 class="post-title post-title-black">
+                    <a href="">
+                      Why Node.js Is The Coolest Kid On The Backend Development
+                      Block!
+                    </a>
+                  </h2>
+                </div>
+              </div>
+              <div class="row post-widget">
+                <div class="col-3 post-widget-img hover">
+                  <img
+                    src="../Project/img/Без названия (2).jpg"
+                    alt=""
+                    class="responsive-img small-img"
+                  />
+                </div>
+                <div class="col-9 post-widget-body">
+                  <h2 class="post-title post-title-black">
+                    <a href="">
+                      Tell-A-Tool: Guide To Web Design And Development Tools
+                    </a>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="featured-posts">
+              <div class="row">
+                <!--setion-title-->
+                <h2 class="section-title">Featured Posts</h2>
+              </div>
+              <div class="row">
+                <div class="featured-post-item news hover">
+                  <a href="blog-post.html">
+                    <img
+                      src="/Project/img/post-img2.jpg"
+                      title="news-img"
+                      class="news__img responsive-img"
+                    />
                   </a>
-                </h2>
+                  <!--news body-->
+                  <div class="news-body">
+                    <!--post meta-->
+                    <div class="post-meta">
+                      <!--post btn-->
+                      <button class="btn jquery-btn hover">
+                        <a href="category.html"> Jquery</a>
+                      </button>
+                      <!--post date-->
+                      <span class="post-date post-date-light"
+                        >March 27,2018</span
+                      >
+                    </div>
+                    <!--post date-->
+                    <h2 class="post-title post-title-white post-title-small">
+                      <a href=""> Ask HN: Does Anybody Still Use JQuery? </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="featured-post-item news hover">
+                  <a href="blog-post.html">
+                    <img
+                      src="/Project/img/post-img.jpg"
+                      title="news-img"
+                      class="news__img responsive-img"
+                    />
+                  </a>
+                  <!--news body-->
+                  <div class="news-body">
+                    <!--post meta-->
+                    <div class="post-meta">
+                      <!--post btn-->
+                      <button class="js-btn btn hover">
+                        <a href="category.html"> Javascript</a>
+                      </button>
+                      <!--post date-->
+                      <span class="post-date post-date-light"
+                        >March 27,2018</span
+                      >
+                    </div>
+                    <!--post date-->
+                    <h2 class="post-title post-title-white post-title-small">
+                      <a href="">
+                        Chrome Extension Protects Against JavaScript-Based CPU
+                        Side-Channel Attacks
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="featured-post-item news hover">
+                  <a href="blog-post.html">
+                    <img
+                      src="/Project/img/post-img2.jpg"
+                      title="news-img"
+                      class="news__img responsive-img"
+                    />
+                  </a>
+                  <!--news body-->
+                  <div class="news-body">
+                    <!--post meta-->
+                    <div class="post-meta">
+                      <!--post btn-->
+                      <button class="btn jquery-btn hover">
+                        <a href="category.html"> Jquery</a>
+                      </button>
+                      <!--post date-->
+                      <span class="post-date post-date-light"
+                        >March 27,2018</span
+                      >
+                    </div>
+                    <!--post date-->
+                    <h2 class="post-title post-title-white post-title-small">
+                      <a href=""> Ask HN: Does Anybody Still Use JQuery? </a>
+                    </h2>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!--end post block-->
+    <!--start featured posts-->
+    <section id="featured-posts">
+      <div class="container">
+        <div class="row">
+          <!--setion-title-->
+          <h2 class="section-title">Featured Posts</h2>
+        </div>
+        <div class="row">
+          <div class="col-4 post">
+            <div class="resent-post-item">
+              <!--post img-->
+              <a href="blog-post.html">
+                <img
+                  src="../Project/img/post-img-2.jpg"
+                  alt=""
+                  class="post__img responsive-img hover"
+                />
+              </a>
+              <!--post meta-->
+              <div class="post-meta">
+                <!--post btn-->
+                <button class="btn webdesign-btn hover">web design</button>
+                <!--post date-->
+                <span class="post-date post-date-dark">March 27 ,2018</span>
+              </div>
+              <!--post-title-->
+              <h2 class="post-title post-title-black">
+                <a href="">
+                  Pagedraw UI Builder Turns Your Website Design Mockup Into Code
+                  Automatically
+                </a>
+              </h2>
+            </div>
+          </div>
+          <div class="col-4 post">
+            <div class="resent-post-item">
+              <!--post img-->
+              <a href="blog-post.html">
+                <img
+                  src="../Project/img/post-img-3jpg.jpg"
+                  alt=""
+                  class="post__img responsive-img hover"
+                />
+              </a>
+              <!--post meta-->
+              <div class="post-meta">
+                <!--post btn-->
+                <button class="btn js-btn hover">Javascript</button>
+                <!--post date-->
+                <span class="post-date post-date-dark">March 27 ,2018</span>
+              </div>
+              <!--post-title-->
+              <h2 class="post-title post-title-black">
+                <a href="">
+                  Chrome Extension Protects Against JavaScript-Based CPU
+                  Side-Channel Attacks
+                </a>
+              </h2>
+            </div>
+          </div>
+          <div class="col-4 post">
+            <div class="resent-post-item">
+              <!--post img-->
+              <a href="blog-post.html">
+                <img
+                  src="../Project/img/post-img-4..jpg "
+                  alt=""
+                  class="post__img responsive-img hover"
+                />
+              </a>
+              <!--post meta-->
+              <div class="post-meta">
+                <!--post btn-->
+                <button class="btn jquery-btn hover">Jquery</button>
+                <!--post date-->
+                <span class="post-date post-date-dark">March 27 ,2018</span>
+              </div>
+              <!--post-title-->
+              <h2 class="post-title post-title-black">
+                <a href=""> Ask HN: Does Anybody Still Use JQuery? </a>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end featured posts-->
   </body>
 </html>
