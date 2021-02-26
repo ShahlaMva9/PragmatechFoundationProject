@@ -69,3 +69,9 @@
 - [x] Layihəmdə 3 section tamamlandı
 - [x] Müəllimin Layihəsi qısa yolla yazıldı
 - [x] Videolar analiz edildi
+
+# Border-radius
+
+The border-radius property defines the radius of the element's corners.
+This property allows you to add rounded corners to elements!
+[Example](https://codepen.io/pen)
