@@ -16,6 +16,9 @@ body {
   line-height: 1.2;
   text-transform: capitalize;
 }
+.small-section-title {
+  font-size: 1.4em;
+}
 .hover:hover {
   opacity: 0.9;
   transition: 0.3s ease;
@@ -39,8 +42,11 @@ body {
   margin-right: 20px;
 }
 .margin-top {
-  margin-top: 5%;
+  margin-top: 25px;
 }
 .text-align-right {
   text-align: right;
+}
+.text-align-center {
+  text-align: center;
 }
