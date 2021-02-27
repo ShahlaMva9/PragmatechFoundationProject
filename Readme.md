@@ -74,4 +74,4 @@
 
 The border-radius property defines the radius of the element's corners.
 This property allows you to add rounded corners to elements!
-[Example](https://codepen.io/pen)
+[Example](https://codepen.io/ShahlaMammadova/pen/vYydXLV)
