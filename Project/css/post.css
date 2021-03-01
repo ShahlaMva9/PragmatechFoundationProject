@@ -12,7 +12,7 @@
 }
 /*post-title*/
 .post-title {
-  line-height: 1.5em;
+  line-height: 1.9em;
 }
 .post-title a {
   font-weight: 600;
@@ -34,7 +34,7 @@
 .post-title-black a {
   color: #212631;
 }
-.post-title-black a:hover {
+.post-title-black a:hover{
   border-bottom: 2px solid black;
   transition: 0.3s;
 }
@@ -53,6 +53,70 @@
 
 .post-container {
   flex-direction: row;
+}
+/* post-body-text */
+.post-body-text ,.post-blockquote {
+  padding-top: 5px;
+  color: #3d455c;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 20px;
+}
+.post-blockquote {
+  font-weight: 600;
+  padding: 20px;
+  position: relative;
+}
+.post-blockquote::before{
+  content: "``";
+  display: block;
+  color: #eceef2;
+  letter-spacing: -30px;
+
+  position: absolute;
+  top: 50%;
+  left:-8px;
+  font-size: 15em;
+  z-index: -2;
+
+}
+.post-body-text-big {
+  font-size: 1.3em;
+}
+/* post share */
+.post-share li {
+  display: block;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fbfbfd;
+  border: 1px solid #a7b3c6;
+ transition: all 0.3s ease;
+}
+.post-share a {
+  color: #a7b3c6;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  transform: translateY(1px);
+}
+.post-share i {
+  font-size: 1.2em;
+
+  
+}
+.post-share li:hover{
+  border-color: #3b5998;
+  transform: scale(1.2);
+}
+.post-share li:hover  a{
+  color: #3b5998;
+
+}
+
+
 }
 @media (min-with: 876px) {
   .post-container {
