@@ -272,12 +272,27 @@ figcaption {
   overflow: hidden;
 }
 /* our mission */
-.our-mission ul {
+.our-mission ul,
+.contact-info ul {
   margin-left: 20px;
 }
-.our-mission ul li {
+.our-mission ul li,
+.contact-info ul li {
   list-style-type: disc;
 }
 .our-mission .section-title {
   margin-top: -0.3em;
+}
+/* contact-info */
+.contact-info span {
+  font-weight: bold;
+}
+.contact-info a {
+  font-weight: bold;
+  color: #212631;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.contact-info a:hover {
+  text-decoration: underline;
 }

@@ -59,12 +59,11 @@
   font-family: 'Nunito', sans-serif;
   padding-top: 5px;
   color: #3d455c;
-  font-size: 16px;
+  font-size: 1.4em;
   font-weight: 300;
   line-height: 26px;
-
-  
 }
+
 .post-blockquote {
   font-weight: 600;
   padding: 20px;
@@ -83,9 +82,7 @@
   z-index: -2;
 
 }
-.post-body-text-big {
-  font-size: 1.3em;
-}
+
 /* post share */
 .post-share li {
   display: block;
