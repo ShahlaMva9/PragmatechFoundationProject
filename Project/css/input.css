@@ -1,0 +1,23 @@
+input {
+  height: 40px;
+  width: 100%;
+  padding: 0px 15px;
+  border: 2px solid #eceef2;
+  background-color: white;
+}
+input::placeholder,
+textarea::placeholder,
+label {
+  font-size: 1.3em;
+  color: #3d455c;
+  line-height: 1.3em;
+}
+input:focus {
+  border: 2px solid black;
+}
+form textarea {
+  border: 2px solid #eceef2;
+  width: 95%;
+  height: 90px;
+  padding: 15px;
+}

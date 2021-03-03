@@ -56,11 +56,14 @@
 }
 /* post-body-text */
 .post-body-text ,.post-blockquote {
+  font-family: 'Nunito', sans-serif;
   padding-top: 5px;
   color: #3d455c;
-  font-size: 1.1em;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 20px;
+  line-height: 26px;
+
+  
 }
 .post-blockquote {
   font-weight: 600;

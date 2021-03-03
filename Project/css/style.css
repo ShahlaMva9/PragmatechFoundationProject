@@ -204,19 +204,7 @@
 .join-our {
   position: relative;
 }
-.join-our input {
-  height: 40px;
-  padding-left: 15px;
 
-  border: 2px solid #eceef2;
-  background-color: white;
-}
-.join-our input::placeholder {
-  font-size: 1.3em;
-}
-.join-our input:focus {
-  border: 2px solid black;
-}
 .fa-telegram-plane {
   position: absolute;
   right: 0;
@@ -235,6 +223,7 @@
 }
 /* category css */
 /* page-header */
+
 #page-header {
   background-color: #fbfbfd;
   border-bottom: 2px solid #f4f4f9;
@@ -265,11 +254,12 @@
 #post-header {
   background: url(../img/post-img.jpg) center;
   background-size: cover;
-  background-image: linear-gradient(rgba(33, 38, 49, 0.3));
+  background-image: linear-gradient(rgba(33, 38, 49, 0.6));
   z-index: -5;
   padding-top: 10%;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
 }
+
 figcaption {
   color: #3d455c;
 }
@@ -277,3 +267,7 @@ figcaption {
 /* .filan-child:not(:last-child) {
   margin-right: 15px;
 } */
+/* write-comment */
+.write-comment {
+  overflow: hidden;
+}
