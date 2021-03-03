@@ -19,6 +19,9 @@ body {
 .small-section-title {
   font-size: 1.4em;
 }
+.md-section-title {
+  font-size: 2em;
+}
 .hover:hover {
   opacity: 0.9;
   transition: 0.3s ease;

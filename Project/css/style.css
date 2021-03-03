@@ -271,3 +271,13 @@ figcaption {
 .write-comment {
   overflow: hidden;
 }
+/* our mission */
+.our-mission ul {
+  margin-left: 20px;
+}
+.our-mission ul li {
+  list-style-type: disc;
+}
+.our-mission .section-title {
+  margin-top: -0.3em;
+}
