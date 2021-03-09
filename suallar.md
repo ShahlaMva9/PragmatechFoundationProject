@@ -11,3 +11,11 @@
 - A-01000001
 - b-01100010
 - B-01000010 və s.
+
+# \*\*_butun proqramlasdirma dillerinde ortaq istifade olunan data tipleri hansilardir ve qisaca izahatini yazin_\*\*
+
+Hər proqramlaşdırma dilində fərqli data tiplərindən istifadə olunur.Bu data tiplərini ümümi olaraq aşaıdakı qruplara ayırmaq olar
+
+- Rəqəm
+- String
+  Bu data tiplərinin çoxlu alt qrupları var.Bu alt qruplar isə hər proqramlaşdırma dilinə görə dəyişir
