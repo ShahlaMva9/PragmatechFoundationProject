@@ -16,12 +16,12 @@
 }
 .post-title a {
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 .post-title-big a {
-  font-size: 2em;
+  font-size: 1.6em;
 }
 
 .post-title-white a {
@@ -34,7 +34,7 @@
 .post-title-black a {
   color: #212631;
 }
-.post-title-black a:hover{
+.post-title-black a:hover {
   border-bottom: 2px solid black;
   transition: 0.3s;
 }
@@ -55,11 +55,12 @@
   flex-direction: row;
 }
 /* post-body-text */
-.post-body-text ,.post-blockquote {
-  font-family: 'Nunito', sans-serif;
+.post-body-text,
+.post-blockquote {
+  font-family: "Nunito", sans-serif;
   padding-top: 5px;
   color: #3d455c;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 300;
   line-height: 26px;
 }
@@ -69,7 +70,7 @@
   padding: 20px;
   position: relative;
 }
-.post-blockquote::before{
+.post-blockquote::before {
   content: "``";
   display: block;
   color: #eceef2;
@@ -77,10 +78,9 @@
 
   position: absolute;
   top: 50%;
-  left:-8px;
+  left: -8px;
   font-size: 15em;
   z-index: -2;
-
 }
 
 /* post share */
@@ -94,7 +94,7 @@
   border-radius: 50%;
   background-color: #fbfbfd;
   border: 1px solid #a7b3c6;
- transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .post-share a {
   color: #a7b3c6;
@@ -104,22 +104,58 @@
 }
 .post-share i {
   font-size: 1.2em;
-
-  
 }
-.post-share li:hover{
+.post-share li:hover {
   border-color: #3b5998;
   transform: scale(1.2);
 }
-.post-share li:hover  a{
+.post-share li:hover a {
   color: #3b5998;
-
 }
 
-
+@media (max-width: 992px) {
+  body {
+    font-size: 13px;
+    width: 100%;
+  }
+  #header .header-nav {
+    display: none;
+  }
+  #header {
+    padding: 20px;
+  }
+  .margin-right {
+    margin-right: 0;
+  }
+  .margin-top-md {
+    margin-top: 25px;
+  }
+  .post-title-small a {
+    font-size: 1.6em;
+  }
 }
-@media (min-with: 876px) {
-  .post-container {
-    flex-direction: column;
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    width: 100%;
+  }
+  #header .header-nav {
+    display: none;
+  }
+  .post-title a {
+    font-size: 1.3em;
+  }
+  .post-title-big a {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    font-size: 11px;
+    width: 100%;
+  }
+  .post-title-big a {
+    font-size: 1.3em;
+    line-height: 0;
   }
 }

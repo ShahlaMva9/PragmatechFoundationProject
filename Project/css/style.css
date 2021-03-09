@@ -11,10 +11,15 @@
 .header-navbar {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 #header .header-nav ul,
 .category-widget ul {
   align-items: stretch;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 .header-nav li {
   padding: 20px;
@@ -296,14 +301,5 @@ figcaption {
 .contact-info a:hover {
   text-decoration: underline;
 }
+
 /* media query */
-@media only screen and (max-width: 1200px) {
-  body {
-    font-size: 11px;
-  }
-}
-@media (max-width: 992px) {
-  body {
-    font-size: 10px;
-  }
-}
