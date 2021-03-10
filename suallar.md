@@ -45,4 +45,8 @@ Number(true)      // 1  qaytaracaq
 # **_Operator precedence nədir və əhəmiyyətini izah edin_**
 Operator precedence - operatorun üstünlüyünü ifadə edir.Əvvəlcə daha yüksək üstünlüyə malik olan operator üzərində əmaliyyat aparılır.
 2 + 3 * 5 // 17 qaytarır.Çünki vurma operatoru ("*"), əlavə operatorundan ("+") daha yüksək üstünlükə malikdir buna görədə birinci vurma əməliyyatı aparılır
- 
+
+# **_Automatic Type Conversion ve Type Conversion Methodlar arasındakı fərqləri izah edin._**
+Automatic Type Conversion başqa sözlə İmplicit Casting ilə data type çevrilməsi edən zaman heç bir data itkisi ilə üzləşmirik. Bunu Compiler özü bizim üçün avtomatik həll edir.Əgər çevrilmə zamanı hansısa informasiya itərsə bunu error kimi bizə göstərir 
+Explicit Casting zamanı biz data itkisini nəzərə alırıq.Bunu əvvəlcədən compilerə  cast operatoru () vasitəsilə bildiririk.
+Bu metodlar arasındakı əsas fəqrlər bundan ibarətdir.
