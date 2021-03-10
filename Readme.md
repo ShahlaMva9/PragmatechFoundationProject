@@ -79,3 +79,16 @@ This property allows you to add rounded corners to elements!
 # Medium.com I məqaləm
 
 [Proqramlaşdırma dillərinin inkişaf tarixi və inkişafa təsir edən amillər](https://sehlameherremova888.medium.com/proqramla%C5%9Fd%C4%B1rma-dill%C9%99rinin-inki%C5%9Faf-tarixi-v%C9%99-inki%C5%9Fafa-t%C9%99sir-ed%C9%99n-amill%C9%99r-423cc3fd9682)
+
+# Javascriptə giriş 
+
+## data type
+* string (hərfilər)-yazmaq üçün "" və ya '' istifadə olunur
+* number (rəqəmlər tam,mənfi,kəsr ədədlər)
+* boolean -2 dəyəri var true(1)və false(0)
+* null- variables içərisi boşdur 
+* undefined - variables içərisində nəsə dəyər var amma bilinmir nədir
+
+## variables
+* let 
+* const -sabit dəyər vermək üçün istifadə olunur .
