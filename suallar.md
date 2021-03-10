@@ -12,7 +12,7 @@
 - b-01100010
 - B-01000010 və s.
 
-# \*\*_butun proqramlasdirma dillerinde ortaq istifade olunan data tipleri hansilardir ve qisaca izahatini yazin_\*\*
+# **_butun proqramlasdirma dillerinde ortaq istifade olunan data tipleri hansilardir ve qisaca izahatini yazin_**
 
 Hər proqramlaşdırma dilində fərqli data tiplərindən istifadə olunur.Bu data tiplərini ümümi olaraq aşaıdakı qruplara ayırmaq olar
 
@@ -20,3 +20,24 @@ Hər proqramlaşdırma dilində fərqli data tiplərindən istifadə olunur.Bu d
 - String
 - boolen (true,false)
   Bu data tiplərinin çoxlu alt qrupları var.Bu alt qruplar isə hər proqramlaşdırma dilinə görə dəyişir
+
+#   **_Type Conversion ya da Type Casting nədir? Hansı hallarda ehtiyac duyulur?_**
+Bildiyimiz kimi javascriptdə müxtəlif data type var.
+- string
+- number
+- boolean
+- null
+-  undefined
+**Type Conversion** və ya **Type Casting** Javascript dəyişənlərini bir data type-dan başkasına çevirir
+Məsələn
+* number string-ə çevirək
+String(123)
+(123).toString()
+* Boolean string-ə çevirək
+String(false) 
+String(true) 
+* string number-a çevirək
+Number("3.14")
+* boolean number-a çevirək
+Number(false)     //  0 qaytaracaq
+Number(true)      // 1  qaytaracaq
