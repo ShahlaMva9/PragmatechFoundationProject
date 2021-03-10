@@ -41,3 +41,8 @@ Number("3.14")
 * boolean number-a çevirək
 Number(false)     //  0 qaytaracaq
 Number(true)      // 1  qaytaracaq
+
+# **_Operator precedence nədir və əhəmiyyətini izah edin_**
+Operator precedence - operatorun üstünlüyünü ifadə edir.Əvvəlcə daha yüksək üstünlüyə malik olan operator üzərində əmaliyyat aparılır.
+2 + 3 * 5 // 17 qaytarır.Çünki vurma operatoru ("*"), əlavə operatorundan ("+") daha yüksək üstünlükə malikdir buna görədə birinci vurma əməliyyatı aparılır
+ 
