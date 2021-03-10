@@ -5,7 +5,7 @@
 
 # **_Reqem ve ededlerin 2 li say sistemine tercume olunmasi bilirik.Bes hərflər ve simvollar binary code-a nece tercume olunur?_**
 
-- Bildiyimiz kimi maşın bizim istediyimiz emaliyyatları **0(elektirik keçmir) və 1(elektrik keçir** şəklində başa düşür.Ona görə də biz hər hansı bir sözü vəya simvolu yazdıqda maşın onu hərf və ya simvol olaraq yox **0 və 1** olaraq başa düşür.
+- Bildiyimiz kimi maşın bizim istediyimiz emaliyyatları **0(elektirik keçmir) və 1(elektrik keçir** şəklində başa düşür.Ona görə də biz hər hansı bir sözü vəya simvolu yazdıqda maşın onu hərf və ya simvol olaraq yox **0 və 1** olaraq başa düşür.Hərfi çevirmək üçün ASCII standartlarından istifadə olunur.Hər hərf ASCII rəqəminə uyğun gəlir
   _Məsələn_ Bəzi latın harflərinin ikili sistemdəki qarşılıqları belədir;
 - a- 01100001
 - A-01000001
@@ -18,4 +18,5 @@ Hər proqramlaşdırma dilində fərqli data tiplərindən istifadə olunur.Bu d
 
 - Rəqəm
 - String
+- boolen (true,false)
   Bu data tiplərinin çoxlu alt qrupları var.Bu alt qruplar isə hər proqramlaşdırma dilinə görə dəyişir
