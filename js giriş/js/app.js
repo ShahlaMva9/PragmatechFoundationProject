@@ -1,2 +1,2 @@
-let a;
-console.log(a);
+a = promt("birinci reqemi yaz;n");
+b = promt("ikinci reqemi yaz;n");

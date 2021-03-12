@@ -120,6 +120,7 @@
 .post-widget-body {
   padding-left: 15px;
 }
+
 /* Featured Posts */
 .featured-post-item {
   margin: 10px 0 25px 0;
@@ -272,10 +273,8 @@ figcaption {
 /* .filan-child:not(:last-child) {
   margin-right: 15px;
 } */
-/* write-comment */
-.write-comment {
-  overflow: hidden;
-}
+
+
 /* our mission */
 .our-mission ul,
 .contact-info ul {

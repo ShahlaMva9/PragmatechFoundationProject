@@ -50,6 +50,10 @@
 }
 
 @media (max-width: 992px) {
+  .row-md {
+    display: flex;
+    flex-direction: row;
+  }
   .col-md-1 {
     width: calc((100% / 12) * 1);
   }
