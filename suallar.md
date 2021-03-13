@@ -21,32 +21,41 @@ Hər proqramlaşdırma dilində fərqli data tiplərindən istifadə olunur.Bu d
 - boolen (true,false)
   Bu data tiplərinin çoxlu alt qrupları var.Bu alt qruplar isə hər proqramlaşdırma dilinə görə dəyişir
 
-#   **_Type Conversion ya da Type Casting nədir? Hansı hallarda ehtiyac duyulur?_**
+# **_Type Conversion ya da Type Casting nədir? Hansı hallarda ehtiyac duyulur?_**
+
 Bildiyimiz kimi javascriptdə müxtəlif data type var.
+
 - string
 - number
 - boolean
 - null
--  undefined
-**Type Conversion** və ya **Type Casting** Javascript dəyişənlərini bir data type-dan başkasına çevirir
-Məsələn
+- undefined
+  **Type Conversion** və ya **Type Casting** Javascript dəyişənlərini bir data type-dan başkasına çevirir
+  Məsələn
+
 * number string-ə çevirək
-String(123)
-(123).toString()
+  String(123)
+  (123).toString()
 * Boolean string-ə çevirək
-String(false) 
-String(true) 
+  String(false)
+  String(true)
 * string number-a çevirək
-Number("3.14")
+  Number("3.14")
 * boolean number-a çevirək
-Number(false)     //  0 qaytaracaq
-Number(true)      // 1  qaytaracaq
+  Number(false) // 0 qaytaracaq
+  Number(true) // 1 qaytaracaq
 
 # **_Operator precedence nədir və əhəmiyyətini izah edin_**
+
 Operator precedence - operatorun üstünlüyünü ifadə edir.Əvvəlcə daha yüksək üstünlüyə malik olan operator üzərində əmaliyyat aparılır.
-2 + 3 * 5 // 17 qaytarır.Çünki vurma operatoru ("*"), əlavə operatorundan ("+") daha yüksək üstünlükə malikdir buna görədə birinci vurma əməliyyatı aparılır
+2 + 3 _ 5 // 17 qaytarır.Çünki vurma operatoru ("_"), əlavə operatorundan ("+") daha yüksək üstünlükə malikdir buna görədə birinci vurma əməliyyatı aparılır
 
 # **_Automatic Type Conversion ve Type Conversion Methodlar arasındakı fərqləri izah edin._**
-Automatic Type Conversion başqa sözlə İmplicit Casting ilə data type çevrilməsi edən zaman heç bir data itkisi ilə üzləşmirik. Bunu Compiler özü bizim üçün avtomatik həll edir.Əgər çevrilmə zamanı hansısa informasiya itərsə bunu error kimi bizə göstərir 
-Explicit Casting zamanı biz data itkisini nəzərə alırıq.Bunu əvvəlcədən compilerə  cast operatoru () vasitəsilə bildiririk.
+
+Automatic Type Conversion başqa sözlə İmplicit Casting ilə data type çevrilməsi edən zaman heç bir data itkisi ilə üzləşmirik. Bunu Compiler özü bizim üçün avtomatik həll edir.Əgər çevrilmə zamanı hansısa informasiya itərsə bunu error kimi bizə göstərir
+Explicit Casting zamanı biz data itkisini nəzərə alırıq.explicit çevrilməni devoloper yerinə yetirir.Bunu əvvəlcədən compilerə cast operatoru () vasitəsilə bildiririk.
 Bu metodlar arasındakı əsas fəqrlər bundan ibarətdir.
+
+# **_Implicit ve Explicit type conversiton nədir?_**
+
+Automatic Type Conversion ve Type Conversion Methodlar arasındakı fərqləri izah edin- sualı ilə eyni cavabdır
