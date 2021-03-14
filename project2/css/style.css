@@ -1,0 +1,182 @@
+body {
+  font-family: "Lato", serif, Calibri, Arial;
+  background-color: #111;
+  font-size: 15px;
+  color: white;
+}
+.container {
+  padding: 20px;
+}
+/* general css */
+.grey-bg {
+  background-color: grey;
+  opacity: 0.5;
+}
+.margin-top {
+  margin-top: 30px;
+}
+.margin-right {
+  margin-right: 30px;
+}
+.margin-bottom{
+    margin-bottom: 30px;
+}
+
+.main-picture {
+  overflow: hidden;
+  background-image: url(../img/background-img.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 580px;
+  position: fixed;
+top: 20px;
+left: 20px;
+bottom: 20px;
+ 
+}
+.resume-main {
+    margin-left: calc((100% / 12) * 4);
+    width: 100%;
+    height: 100vh;
+}
+/* start title heading */
+.title-heading {
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  position: relative;
+}
+.title-heading-bg::before {
+  content: " ";
+  display: block;
+  background-color: #252727;
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 25px;
+  right: 0px;
+  z-index: -1;
+}
+
+.my-name , .section-name {
+  font-weight: bolder;
+  font-size: 1.3em;
+  padding: 25px 0;
+  
+}
+
+.my-job {
+  color: #ffb400;
+  font-weight: bold;
+}
+.section-name .part-1 {
+    transition:all 0.3s ease;
+}
+.section-name .part-2{
+    color: #ffb400;
+    transition:all 0.3s ease;
+} 
+
+/* end title heading */
+
+/* about-me */
+
+/* pagetitle */
+#about-me ,#my-portfolio{
+  background-color: #252727;
+  position: relative;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 65%;
+
+  margin: 20px 0 0 0;
+  transition: 2s;
+
+}
+.resume-container,.container-infos{
+    border-bottom: 1px solid rgb(85, 83, 83);
+    padding-bottom: 30px;
+}
+/* close btn */
+#closeBtn {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  border: none;
+  outline: none;
+  font-size: 3em;
+  background: none;
+  color: grey;
+}
+/* page-title */
+.page-title {
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+.page-title .part-2 {
+  color: #ffb400;
+}
+/* divider */
+.divider {
+    border-bottom: 1px solid grey;
+    width: 20%;
+    margin: 0 auto;
+}
+.info-title {
+  font-size: 1.6em;
+}
+.info-title span {
+  padding-right: 20px;
+  display: inline-block;
+}
+.about-myself {
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+#about-me li {
+padding-top: 15px;
+
+}
+#about-me li span {
+    font-weight: bold;
+}
+#about-me button {
+    margin-right: 15px;}
+/* resume */
+.resume-container{
+    padding: 30px 0;
+}
+/* badgets */
+.badgets {
+text-align: center;
+font-weight: bold;
+text-transform: uppercase;
+padding: 30px 0;
+}
+.badgets span {
+    color: #ffb400;
+    font-size: 2.5em;
+    display: inline-block;
+    padding: 20px 0;
+}
+.badgets i {
+    color: grey;
+    font-size: 2.8em;
+}
+.badgets h6{
+ 
+ font-size: 1.3em;
+}
+#my-portfolio {
+    background-color: red;
+    display: none;
+    z-index: 10;
+}
