@@ -1,4 +1,4 @@
-let a, b, c;
+// let a, b, c;
 a = prompt("Birinci ədədi daxil edin");
 
 if (!/^[0-9]+$/.test(a)) {
@@ -10,6 +10,7 @@ if (!/^[0-9]+$/.test(b)) {
   prompt("Zəhmət olmasa rəqəm daxil edin");
 }
 c = Number(a) + Number(b);
+
 console.log(c);
 // Alqoritm
 // 1.a b ve c deyerlirini elave edirik
