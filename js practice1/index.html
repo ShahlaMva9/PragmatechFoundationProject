@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .mystyle {
+        background-color: yellow;
+      }
+      #div {
+        border: 1px solid yellow;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+      }
+      button {
+        border: none;
+        outline: none;
+        padding: 20px;
+      }
+    </style>
+    <button id="light">Turn on</button>
+    <button id="dark">Turn off</button>
+    <div id="div"></div>
+    <script>
+      let a = document.getElementById("light");
+      let b = document.getElementById("div");
+      let c = document.getElementById("dark");
+      a.addEventListener("click", function () {
+        b.classList.add("mystyle");
+      });
+      c.addEventListener("click", function () {
+        b.classList.remove("mystyle");
+      });
+    </script>
+  </body>
+</html>
