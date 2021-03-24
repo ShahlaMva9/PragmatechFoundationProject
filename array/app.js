@@ -2,6 +2,9 @@
 
 let names = ["Shahla", "Leman", "Mehriban", "Naile"];
 console.log(names);
+console.log(names[3][2]);
+names[6] = "Samir";
+console.log(names);
 
 // array sonuna elave edir
 names.push("Leyla");
