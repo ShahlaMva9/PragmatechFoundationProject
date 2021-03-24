@@ -22,3 +22,51 @@ function area(r) {
   alert("Dairenin sahesi :" + s);
 }
 area(r);
+// Imtahandan keçib keçmədiyini yoxlamaq
+let imtBalı, girişBalı, minSum;
+// 2 ededi toplama funksiyasi
+function sum(x, y) {
+  minSum = Number(x) + Number(y);
+  if (minSum >= 51) {
+    alert("Siz imtahandan kecdiz");
+  } else {
+    alert("imtahandan kesildiz");
+  }
+}
+
+function getGirişBalı() {
+  girişBalı = prompt("Giriş balını daxil edin");
+  if (!/^[0-9]+$/.test(girişBalı)) {
+    getGirişBalı();
+  }
+}
+
+function getImtBalı() {
+  imtBalı = prompt("İmtahan balını daxil edin");
+  if (!/^[0-9]+$/.test(imtBalı)) {
+    getImtBalı();
+  }
+}
+
+function checkAndSum() {
+  getGirişBalı();
+  getImtBalı();
+  sum(girişBalı, imtBalı);
+  if (minSum < 51) {
+    const answer = prompt("Bir daha cehd etmek istrdiz?");
+    if (answer === "yes") {
+      checkAndSum();
+    }
+  }
+}
+
+checkAndSum();
+const numbers = [1, 2, 3];
+
+function multiSum(...arg) {
+  console.log("args", arg);
+}
+
+multiSum(numbers);
+
+multiSum().sumBir();
