@@ -64,3 +64,6 @@ for (x; x < 13; x++) {
 
   console.log(x);
 }
+console.log(Math.PI);
+let nums = [1, 5, 3, 6, 2, 67, 4543, 345, 23];
+console.log(Math.random(nums * 100000));

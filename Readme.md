@@ -104,13 +104,15 @@ This property allows you to add rounded corners to elements!
 - \*\* üstə yüksətlmə
 - ++ 1 vahid artırır
 - -- 1 vahod azaldır
- 
- # Declaration ve assigment function
-Local skopda 2cur yaza 
 
-# array 
-   Array eyni tipde olan degiskenleri bir yere yigmaq ucun istifade olunur
-   let numbers=[1,2,3] formasinda yazilir 
+# Declaration ve assigment function
+
+Local skopda 2cur yaza
+
+# array
+
+Array eyni tipde olan degiskenleri bir yere yigmaq ucun istifade olunur
+let numbers=[1,2,3] formasinda yazilir
 
 - array.push(4) - array sonuna yeni elemt elave edir
 - array.unshift(5)- array evveline yeni elemt elave edir
@@ -118,3 +120,16 @@ Local skopda 2cur yaza
 - array.shift()-ilk elemeti silir
 - array.indexof()- secdiyimiz elementin sirasini gosterir
 - array.lentgh()- arrayin uzunluğun gosterir
+
+# js Math
+
+- Math.max()
+- Math.min()
+- MAth.PI pi sayisi
+- Math.pow(4,3) menasi 4 usdu 3 cavab 64
+- Math.random()
+- Math.round(2.5) 3 e yuvarlaqsak
+- Math.sign() musbet menfi oldugun bildirir
+- Math.sqrt() kok alir
+- Math.abs() modul alir
+- Math.floor(1.6) asagi yvarlaqsdiri

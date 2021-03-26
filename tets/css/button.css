@@ -1,0 +1,29 @@
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: center;
+    font-size: .8em;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-yellow {
+    background-color: #ffb400;
+    color: white;
+    border: 1px solid #ffb400;
+
+}
+.btn-yellow {
+    opacity: 0.8;
+}
+.btn-outline {
+    background-color: inherit;
+    border: 1px solid #ffb400;
+    color: #ffb400;
+}
+.btn-outline:hover {
+    background-color: #ffb400;
+    color: white;
+}

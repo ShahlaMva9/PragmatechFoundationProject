@@ -8,10 +8,7 @@ body {
   padding: 20px;
 }
 /* general css */
-.grey-bg {
-  background-color: grey;
-  opacity: 0.5;
-}
+
 .margin-top {
   margin-top: 30px;
 }
@@ -37,9 +34,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 580px;
-
-
-
  
 }
 
