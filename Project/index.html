@@ -30,6 +30,42 @@
     <title>WebMag</title>
   </head>
   <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="about.html">Join Us</a>
+      <a href="#">Advertisement</a>
+      <a href="contact.html">Contact</a>
+      <h2 class="section-title small-section-title margin-top">Recent Posts</h2>
+     <div class="row">
+       <div class="col-3 margin-top
+       ">
+         <img src="../Project/img/small-img.jpg" class="responsive-img" alt="">
+</div>
+       <div class="col-9 margin-top ">
+        <h2 class="post-title"> <a href="" > Pagedraw UI Builder Turns Your Website Design Mockup Into Code Automatically</a> </h2> 
+       </div>
+     </div>
+     <div class="row">
+      <div class="col-3 margin-top
+      ">
+        <img src="../Project/img/post-img-2.jpg" class="responsive-img" alt="">
+</div>
+      <div class="col-9 margin-top ">
+       <h2 class="post-title"> <a href="" > Why Node.js Is The Coolest Kid On The Backend Development Block!</a> </h2> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3 margin-top
+      ">
+        <img src="../Project/img/post-img-3jpg.jpg" class="responsive-img" alt="">
+</div>
+      <div class="col-9 margin-top ">
+       <h2 class="post-title"> <a href="" > Tell-A-Tool: Guide To Web Design And Development Tools</a> </h2> 
+      </div>
+    </div>
+    </div>
     <!--start header-->
     <section id="header" class="slide-down">
       <!--container-->
@@ -66,7 +102,7 @@
           <div class="col-1  header-btns row">
             <!--equal-btn-->
             <div class="equal-btn">
-              <button>
+              <button onclick="openNav()">
                 <i class="fa fa-bars"></i>
               </button>
             </div>
@@ -1134,5 +1170,6 @@
 </div>
     </section>
     <!--end footer-->
+    <script src="../Project/app.js"></script>
   </body>
 </html>

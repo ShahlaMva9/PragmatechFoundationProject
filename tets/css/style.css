@@ -5,6 +5,10 @@ body {
     padding: 0;
     box-sizing: border-box;
   }
+  h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+  }
   /* general css */
   li {
     list-style: none;
@@ -102,7 +106,7 @@ height: 580px;
 }
 #side-nav {
 background-color: #252727;
-width:100%;
+width:0%;
 height: 100%;
 /* opacity: 1; */
 position: absolute;
@@ -180,6 +184,7 @@ position: relative;
 .resume-info  h6{
   text-transform: uppercase;
   font-size: 1.2em;
+  padding-top: 20px;
 }
 .resume-info .fa-user-secret {
   margin-right: 5px;
@@ -207,7 +212,7 @@ height: 1px;
 .tab {
 display: flex;
 flex-direction: column;
-
+margin-top: 10%;
 }
 
 /* Style the buttons inside the tab */
@@ -232,12 +237,64 @@ transition: 0.3s ease;
   background-color: #ffb400;
   color: white;
 }
+
 .resume-card-header {
   color: #ffb400;
-  border: 1px solid rgb(51, 51, 51);
+  border: 1px solid rgb(102, 102, 102);
   background: rgb(21, 21, 21);
   padding: 20px 30px;
+  margin-bottom: 0;
   text-align: center;
   font-weight: bold;
   font-size: 1.3em;
 }
+.resume-card-body {
+  font-size: 0.9em;
+padding: 30px;
+  border: 1px solid rgb(102, 102, 102);
+}
+.resume-card-body h6 {
+font-size: 0.9em;
+
+padding-bottom: 10px;
+font-weight: normal;
+}
+.resume-card-body h6 span {
+  font-weight: bold;
+}
+.resume-card-body .date {
+  color: grey;
+ 
+}
+.seperator {
+  display: inline-block;
+width: 15%;
+  border-bottom: 2px solid #ffb400;
+  margin-bottom: 3%;
+}
+
+.checked {
+  color: orange;
+}
+.rate .fa-star {
+  font-size: 1em;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.resume-container {
+  padding-bottom: 7%;
+}
+.resume-badgets {
+  padding: 5% 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.7em;
+}
+.resume-badgets h3 {
+ font-weight: bold;
+  padding: 10px 0;
+  color: #ffb400;
+}
+.resume-badgets i {
+  color: rgb(119, 119, 119);
+ }
