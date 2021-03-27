@@ -1,15 +1,26 @@
+let sideNav = document.getElementById("side-nav");
+
 function openNav() {
-  document.getElementById("side-nav").style.width = "65%";
-  //   document.getElementById("side-nav").style.opacity = "1";
-  document.getElementById("side-nav").classList.add("mystyle");
+  document.getElementById("side-nav").style.width = "96%";
 }
 function closeNav() {
   document.getElementById("side-nav").style.width = "0%";
-  //   document.getElementById("side-nav").style.opacity = "0";
-  //   document.getElementById("closeBtn").style.z - index = "1";
-  document.getElementById("side-nav").classList.remove("mystyle");
+  sideNav.classList.remove("mystyle");
 }
-let a = document.getElementsByClassName("resume-list-item");
-a.addEventListener("click", function () {
-  console.log("jk");
-});
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
