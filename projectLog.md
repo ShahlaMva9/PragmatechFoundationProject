@@ -17,5 +17,5 @@
 2-ci layihenin adin deyise bilmedim sonrada
 2 ci layihe 1 sehifeden ibaretdir - index.html
 Javascript coxdur,
-html-css terefin 70% bitirmisem
+html-css terefin 50% bitirmisem
 responsivlik qalib
