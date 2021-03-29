@@ -154,3 +154,6 @@ function ikiIleCarp(obj) {
 ikiIleCarp(menu);
 
 console.log(menu);
+
+
+console.log(document.getElementsByClassName)

@@ -133,3 +133,7 @@ let numbers=[1,2,3] formasinda yazilir
 - Math.sqrt() kok alir
 - Math.abs() modul alir
 - Math.floor(1.6) asagi yvarlaqsdiri
+
+# js practice
+
+(Sağa və sola hərəkət edən qutu)[https://codepen.io/ShahlaMammadova/pen/BapzeZb]
