@@ -137,3 +137,4 @@ let numbers=[1,2,3] formasinda yazilir
 # js practice
 
 (Sağa və sola hərəkət edən qutu)[https://codepen.io/ShahlaMammadova/pen/BapzeZb]
+(Sağa və sola hərəkət edən qutu container icersinde qalir)[https://codepen.io/ShahlaMammadova/pen/BapzeZb]
