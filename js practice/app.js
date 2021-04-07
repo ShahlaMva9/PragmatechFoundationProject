@@ -155,33 +155,31 @@
 
 // console.log(menu);
 
-
 // console.log(document.getElementsByClassName)
 
+// let num = prompt("100 den boyuk reqem yazin ");
+// function check() {
+//   if (num > 100 || num == "") {
+//     console.log(true);
+//   } else if (num < 100) {
+//     num = prompt("zehmet olmas 100 den boyuk reqem yazin ");
+//     check();
+//   }
+// }
+// check();
+// let i;
+// function fnWithIf() {
+//   if (i < 5) {
+//     console.log("if i", i);
+//     i++;
+//     console.log(i);
+//     fnWithIf();
+//   }
+// }
+// fnWithIf();
 
-let num = prompt("100 den boyuk reqem yazin ");
-function check() {
-  if (num > 100 || num == "") {
-    console.log(true);
-  } else if (num < 100) {
-    num = prompt("zehmet olmas 100 den boyuk reqem yazin ");
-    check();
-
-  }
-}
-check();
-
-function fnWithIf() {
-  if (i < 5) {
-  432 console.log("if i", i);
-    i++;
-    console.log(i);
-    fnWithIf();
-  }
-}
-fnWithIf();
-
-let numbers=2
-for (numbers<=10;numbers++){
-  if(numbers/)
-}
+carName = "Volvo";
+console.log(carName);
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search(/p/i);
+console.log(pos);
