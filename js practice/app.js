@@ -260,3 +260,19 @@ let g = {
 };
 f.sayHi();
 g.sayhi();
+
+// String Metodlri
+
+text = "Javasript Angular JS PHP JS";
+console.log(text.length);
+console.log(text.toUpperCase());
+console.log(text.charAt(0));
+console.log(text.search("JS"));
+console.log(text.indexOf("JS", 21));
+console.log(text.slice(5, 21));
+console.log(text.substr(10, 5));
+// console.log(text.replace("JS", "CSS"));
+console.log(text.replace(/JS/g, "CSS"));
+text2 = "text2";
+console.log(text.concat(text2));
+console.log(typeof console.log);
