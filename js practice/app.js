@@ -183,3 +183,80 @@ console.log(carName);
 var str = "Please locate where 'locate' occurs!";
 var pos = str.search(/p/i);
 console.log(pos);
+
+let a = 1;
+function numbers() {
+  console.log(a);
+  a++;
+  if (a < 10) {
+    numbers();
+  }
+}
+numbers();
+
+// Object Practice
+let user = {
+  name: "Shehla",
+  age: 21,
+  "Sur name": "Maharramova",
+  test: undefined,
+};
+
+// for in
+for (key in user) {
+  //   console.log("user key ", user[key]);
+  console.log("key ", key);
+}
+
+let codes = {
+  49: "Almanya",
+  41: "İsveç",
+  44: "İngiltere",
+  // ..,
+  1: "Amerika Birleşik Devletleri",
+};
+console.log(codes);
+for (key in codes) {
+  console.log(key);
+}
+console.log(user.size == undefined);
+console.log("color" in user);
+console.log("find test", user.test === undefined);
+console.log("find test in", "test" in user);
+// delete user.age;
+delete user["Sur name"];
+console.log(user["name"]);
+console.log(user);
+
+let kullanici = {
+  isim: "Mahsun",
+  yas: 30,
+};
+
+// let anahtar = prompt("Kullanıcı hakkında ne bilmek istiyorsun?", "yas");
+
+// değişkene göre değer alınır.
+// alert(kullanici[anahtar]); // Mahsun (eğer "isim" girerse )
+
+const something = {
+  name: "Memmed",
+};
+
+const admin = something;
+admin.name = "Shehla";
+console.log(something);
+console.log(admin);
+
+let f = {
+  sayHi: function () {
+    console.log("Hi");
+  },
+};
+let g = {
+  isim: "Gunay",
+  sayhi() {
+    console.log(this.isim);
+  },
+};
+f.sayHi();
+g.sayhi();
