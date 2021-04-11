@@ -12,3 +12,4 @@ Layihemde dinamik olan hisseler
 - tecrube
 
 [img](/Screenshot_1.jpg)
+[img](/Screenshot_2.jpg)
