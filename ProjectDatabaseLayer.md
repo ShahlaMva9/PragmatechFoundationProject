@@ -10,6 +10,6 @@ Layihemde dinamik olan hisseler
 - bacariqlar
 - tehsil
 - tecrube
+- myblog
 
-[img](/Screenshot_1.jpg)
-[img](/Screenshot_2.jpg)
+[db designer cedvel](https://app.dbdesigner.net/designer/schema/410644)
