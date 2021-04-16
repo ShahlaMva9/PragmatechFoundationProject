@@ -152,3 +152,4 @@ Main commands
 # js practice
 
 - (background deyismek)[https://codepen.io/ShahlaMammadova/pen/oNBMxeK]
+- (counter)[https://codepen.io/ShahlaMammadova/pen/zYNLqmb]
