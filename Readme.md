@@ -148,3 +148,7 @@ Main commands
 - delete from User where ;
 - select\*from User;
 - uptade User set;
+
+# js practice
+
+- (background deyismek)[https://codepen.io/ShahlaMammadova/pen/oNBMxeK]
