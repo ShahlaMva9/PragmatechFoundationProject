@@ -153,3 +153,14 @@ Main commands
 
 - (background deyismek)[https://codepen.io/ShahlaMammadova/pen/oNBMxeK]
 - (counter)[https://codepen.io/ShahlaMammadova/pen/zYNLqmb]
+
+# Phyton data types
+
+Icerisinde bir data saxlayanlar:Primitive data type
+
+- str
+- int
+- float
+- complex
+- bool
+  Referance Data Type
