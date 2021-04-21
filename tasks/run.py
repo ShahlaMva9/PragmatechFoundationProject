@@ -71,6 +71,8 @@
 # thislist = ["apple", "banana", "cherry", "peaar", "watermelon"]
 # thislist.remove("apple")
 
+#  append void functiondir bir deyer alir return type noneType dir hecne qaytarmir
+
 # 8 Pythonda “Dictionary” metodlarını araşdırın və istədiyiniz hər hansı 5 metodun nə işə yaradığını nümunə ilə göstərin
 # thisdict = {
 #     "brand": "Ford",
@@ -111,4 +113,33 @@
 #         print("Problem var")
 # print(sum)
 #  10
-num = 45342
+
+# import random
+# colours = ['Red', 'Blue', 'Green', 'White', 'Black']
+# print(random.choice(colours))
+
+
+# # 11
+
+say = input("Emeliyyat sayini daxil edin")
+sayInt = int(say)
+
+_list = []
+for i in range(sayInt):
+    operation = input("Emaliyyati daxil edin")
+    operation = operation.split()
+    print(operation)
+    _list += operation
+    if operation[0] == "sort":
+        _list.sort()
+    elif operation[0] == "append":
+        _list.append(int(operation[1]))
+    elif operation[0] == "print":
+        print(_list)
+    elif operation[0] == "pop":
+        _list.pop()
+    elif operation[0] == "reverse":
+        _list.reverse()
+    if operation[0] == 'remove':
+        if _list:
+            _list.remove(int(operation[1]))

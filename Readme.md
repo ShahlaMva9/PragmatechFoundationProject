@@ -158,9 +158,30 @@ Main commands
 
 Icerisinde bir data saxlayanlar:Primitive data type
 
-- str
-- int
-- float
-- complex
-- bool
+- str(metin)
+  Reqem
+- int (tam ededler)
+- float (kesr edeler )
+- complex(5k)
+- boolean (true ,false)
   Referance Data Type
+- list []- array oxsuyur icersiinde deyisiklik ede bilirik
+- tuple() array oxsuuyur icersinde deyisiklik etmek olmur
+- range(100)
+- dict obyekte bezniyir
+
+# Phyton list method
+
+- append void functiondir ,hecne qaytarmir , 1 deyer alir requiredir bu deyer ,return type NOneType-dir.Liste element elave edir
+  x = [1, 2]
+  x.append(3)
+  print(x)
+- insert void-dir,2 deyer alir- ikiside required-dir,Return type Nonetype.Liste element elave edir
+  x.insert(index,elem)
+- extend void,return type nonetype,1 deyer alir required-dir. 2 list, set, tuple ni birlesdiri
+- remove void ,return type nonetype ,1 deyer alir required ,string, number, list etc elementleri sile bilirik
+- pop return-dir sildiyi elementi donderir ,return type siliyi elementin type olur ,1 deyer alir optinaldir deyer yamasaq sonuncu elementi silir
+- clear void,return type none type ,deyer almir listin icerisini silir
+- del voiddir ,
+- sort() voididr , return type Nonetype, 2 deyer alir optinaldir reverse=true tersine cevirir
+- reverse voiddir , return type None type ,deyer almir -listin tersine cevirir
