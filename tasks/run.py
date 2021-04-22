@@ -121,25 +121,37 @@
 
 # # 11
 
-say = input("Emeliyyat sayini daxil edin")
-sayInt = int(say)
+# say = input("Emeliyyat sayini daxil edin")
+# sayInt = int(say)
 
-_list = []
-for i in range(sayInt):
-    operation = input("Emaliyyati daxil edin")
-    operation = operation.split()
-    print(operation)
-    _list += operation
-    if operation[0] == "sort":
-        _list.sort()
-    elif operation[0] == "append":
-        _list.append(int(operation[1]))
-    elif operation[0] == "print":
-        print(_list)
-    elif operation[0] == "pop":
-        _list.pop()
-    elif operation[0] == "reverse":
-        _list.reverse()
-    if operation[0] == 'remove':
-        if _list:
-            _list.remove(int(operation[1]))
+# _list = []
+# for i in range(sayInt):
+#     operation = input("Emaliyyati daxil edin")
+#     operation = operation.split()
+#     print(operation)
+#     _list += operation
+#     if operation[0] == "sort":
+#         _list.sort()
+#     elif operation[0] == "append":
+#         _list.append(int(operation[1]))
+#     elif operation[0] == "print":
+#         print(_list)
+#     elif operation[0] == "pop":
+#         _list.pop()
+#     elif operation[0] == "reverse":
+#         _list.reverse()
+#     if operation[0] == 'remove':
+#         if _list:
+#             _list.remove(int(operation[1]))
+# 12
+
+
+def split_and_join():
+    a = "this is a string"
+    a = a.split(" ")
+    print("string", a)
+    a = "-".join(a)
+    print("join", a)
+
+
+split_and_join()
