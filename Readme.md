@@ -153,6 +153,7 @@ Main commands
 
 - (background deyismek)[https://codepen.io/ShahlaMammadova/pen/oNBMxeK]
 - (counter)[https://codepen.io/ShahlaMammadova/pen/zYNLqmb]
+- (slider)[https://codepen.io/ShahlaMammadova/pen/XWpORxj]
 
 # Phyton data types
 
