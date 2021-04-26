@@ -186,3 +186,7 @@ Icerisinde bir data saxlayanlar:Primitive data type
 - del voiddir ,
 - sort() voididr , return type Nonetype, 2 deyer alir optinaldir reverse=true tersine cevirir
 - reverse voiddir , return type None type ,deyer almir -listin tersine cevirir
+
+# Hackerranq link
+
+(Hackerrangprofile)[https://www.hackerrank.com/sehlameherremov1]
