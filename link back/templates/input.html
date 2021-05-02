@@ -1,0 +1,8 @@
+{% macro input(id, name, labelText,type='text',isOptional=False) -%}
+<label for="{{ id }}" class="form-label"
+  >{{ labelText }} {% if isOptional %}
+  <span class="text-muted">(Optinal)</span>
+  {% endif %}
+</label>
+<input id="{{ id }}" class="form-control" type="{{ type }}" name="{{ name }}" />
+{%- endmacro %}
