@@ -130,18 +130,18 @@
 #         self.number = _number
 
 
-# produc = Product("cake", 20, 100, "pink", 10)
-# print(produc.name)
-Books = []
+# # produc = Product("cake", 20, 100, "pink", 10)
+# # print(produc.name)
+# Books = []
 
 
-class Book():
-    def __init__(self, _name, _price, _aauthor, _page):
-        self.Name = _name
-        self.Price = _price
-        self.Author = _aauthor
-        self.Page = _page
-        Books.append(self)
+# class Book():
+#     def __init__(self, _name, _price, _aauthor, _page):
+#         self.Name = _name
+#         self.Price = _price
+#         self.Author = _aauthor
+#         self.Page = _page
+#         Books.append(self)
 
-    def ShowBook(self):
-        return f'{self.Name} | {self.Price} | {self.Author} | {self.Page}'
+#     def ShowBook(self):
+#         return f'{self.Name} | {self.Price} | {self.Author} | {self.Page}'
