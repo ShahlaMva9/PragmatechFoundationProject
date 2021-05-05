@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %} {% block main %}
+<ul class="list-group">
+    {% for contact in contacts  %}
+
+        <li class="list-group-item">
+            <span class="fw-bold">{{contact.contact}}</span>
+            <span>{{contact.contact_info}}</span> 
+            <span> <img src="static/uploads/{{contact.contact_photo}}" style="width:10px" > </span>
+        </li>
+
+    {% endfor %}
+</ul>
+
+  
+
+
+{% endblock %}

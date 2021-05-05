@@ -1,0 +1,36 @@
+{% extends 'admin/base.html' %} {% block content %}
+<h4 class="my-2">Add new contact</h4>
+<form action="/admin/contact" method="POST" enctype="multipart/form-data">
+<input type="text" class="form-control my-2" name="contact" placeholder="Contact" >
+<input type="text" class="form-control my-2" name="contact_info" placeholder="contact_info" >
+<input type="file" class="form-control my-2" name="contact_photo" >
+<input type="submit" class="btn btn-primary"  value="add new contact" >
+</form>
+
+<h4 class="my-2">ALL Contact</h4>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Contact</th>
+      <th scope="col">Contact info</th>
+      <th scope="col">Contact photo</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for contact in contacts  %}
+    <tr>
+      <th scope="row">{{loop.index}}</th>
+      <td>{{contact.contact}}</td>
+      <td> {{contact.contact_info}}</td>
+      <td>{{contact.contact_photo}}</td>
+      <td>
+          <a  href=""> Delete</a>
+          <a  href="">Edit</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
