@@ -14,7 +14,7 @@ class User(db.Model):
     address2 = db.Column(db.String(50), nullable=False)
     country = db.Column(db.String(50), nullable=False)
     state = db.Column(db.String(50), nullable=False)
-    cardType = db.Column(db.String(50), nullable=False)
+    cardType = db.Column(db.String(50), nullable=True)
     zip = db.Column(db.Integer, nullable=False)
     nameCard = db.Column(db.String(50), nullable=False)
     cardNumber = db.Column(db.Integer, nullable=False)
@@ -44,10 +44,11 @@ def billing():
     cardNumber = request.form["cardNumber"]
     Expiration = request.form["Expiration"]
     CVV = request.form["CVV"]
+    zip = request.form["zip"]
 
     user = User(first_name=first_name, last_name=last_name, email=email, address=address,
-                address2=address2, country=country, state=state, zip=zip, nameCard=nameCard,
-                cardNumber=cardNumber, Expiration=Expiration, CVV=CVV, cardType=cardType
+                address2=address2, country=country, state=state,cardType=cardType, zip=zip, nameCard=nameCard,
+                cardNumber=cardNumber, Expiration=Expiration, CVV=CVV
                 )
 
     try:
@@ -61,7 +62,7 @@ def billing():
 @app.route("/users-list")
 def show():
     users = User.query.all()
-    return render_template("users-list.html", users=users)
+    return render_template("user-list.html", users=users)
 
 
 if __name__ == "__main__":
