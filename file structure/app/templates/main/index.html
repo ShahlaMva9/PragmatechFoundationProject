@@ -11,7 +11,17 @@
     {% endfor %}
 </ul>
 
-  
+{% endblock %}
+{% block experience %}
 
+    {% for experience in experience  %}
+
+    <div class="col-6" >
+        <h2 class="fs-5"> <span class='job_name fs-6' >{{experience.job_name}}-</span>  <span class='job_company fs-6' >{{experience.job_company}}</span>  </h2>
+        <span class='text-muted job_date' >{{experience.job_date}}</span>
+        <p class="job_content" >{{experience.job_content}}</p>
+      </div>
+
+    {% endfor %}
 
 {% endblock %}
