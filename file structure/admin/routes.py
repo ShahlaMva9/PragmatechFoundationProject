@@ -45,3 +45,18 @@ def admin_experience():
         db.session.commit()
         return redirect('/admin/experience')
     return render_template("admin/experience.html", form=form,experience=experience)
+
+@app.route('/deleteExperience/<int:id>')
+def deleteexp(id):
+    deleteExperience =Experience.query.get_or_404(id)
+    db.session.delete(deleteExperience)
+    db.session.commit()
+    return redirect("/")
+
+@app.route('/deleteContact/<int:id>')
+def deletecon(id):
+    deleteContact =Contact.query.get_or_404(id)
+    db.session.delete(deleteContact)
+    db.session.commit()
+    return redirect("/")
+

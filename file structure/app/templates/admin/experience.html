@@ -24,13 +24,13 @@
   <tbody>
     {% for experience in experience  %}
     <tr>
-      <th scope="row">{{loop.index}}</th>
+      <th scope="row">{{experience.id}}</th>
       <td>{{experience.job_name}}</td>
       <td> {{experience.job_company}}</td>
       <td>{{experience.job_date}}</td>
       <td>{{experience.job_content}}</td>
       <td>
-          <a  href=""> Delete</a>
+          <a  href="/deleteExperience/{{experience.id}}"> Delete</a>
           <a  href="">Edit</a>
       </td>
     </tr>
