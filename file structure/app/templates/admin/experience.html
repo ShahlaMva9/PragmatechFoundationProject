@@ -1,0 +1,41 @@
+{% extends 'admin/base.html' %} {% block content %}
+<h3 class="my-2">Experience page</h3>
+<h4 class="my-2">Add new Experience</h4>
+<form action="{{url_for('admin_experience')}}" method="POST">
+  {{form.job_name(class='form-control my-2',placeholder="Job name")}}
+  {{form.job_company(class='form-control my-2',placeholder="Company name")}}
+  {{form.job_date(class='form-control my-2',placeholder="Job date")}}
+  {{form.job_content(class='form-control my-2',placeholder="Job content ")}}
+  {{form.submit(value='Submit',class='btn btn-primary my-2')}}
+</form>
+
+<h4 class="my-2">Experience</h4>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Job name</th>
+      <th scope="col">Job company</th>
+      <th scope="col">Job date</th>
+      <th scope="col">Job content</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for experience in experience  %}
+    <tr>
+      <th scope="row">{{experience.id}}</th>
+      <td>{{experience.job_name}}</td>
+      <td> {{experience.job_company}}</td>
+      <td>{{experience.job_date}}</td>
+      <td>{{experience.job_content}}</td>
+      <td>
+          <a  href="/deleteExperience/{{experience.id}}"> Delete</a>
+          <a  href="">Edit</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

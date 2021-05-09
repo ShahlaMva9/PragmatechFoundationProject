@@ -14,7 +14,16 @@
     <title>Document</title>
   </head>
   <body>
-  
+  <style>
+    .col-6 {
+      transition: all 0.3s ease;
+      margin-left: 20px;
+    }
+    .col-6:hover {
+      cursor: pointer;
+      background-color:blanchedalmond ;
+    }
+  </style>
     <div class="container">
       <h1 class="fs-5">Personal info</h1>
       <p>
@@ -23,6 +32,15 @@
         over a decade of experience.
       </p>
       {% block main %}{% endblock main %}
+     <div class="experience my-2">
+        <h1 class="fs-5">Experience</h1>
+        <div class="row  d-flex flex-column" >
+          {% block experience %}{% endblock %}
+         
+            
+        </div>
+     </div>
+
     </div>
   </body>
 </html>

@@ -21,16 +21,17 @@
   <tbody>
   {% for contact in contacts  %}
     <tr>
-      <th scope="row">{{loop.index}}</th>
+      <th scope="row">{{contact.id}}</th>
       <td>{{contact.contact}}</td>
       <td> {{contact.contact_info}}</td>
       <td>{{contact.contact_photo}}</td>
       <td>
-          <a  href=""> Delete</a>
-          <a  href="">Edit</a>
+          <a  href="/deleteContact/{{contact.id}}"> Delete</a>
+          <a  href="/updateecon/{{contact.id}}">Edit</a>
       </td>
     </tr>
     {% endfor %}
   </tbody>
 </table>
+
 {% endblock %}
