@@ -60,3 +60,17 @@ def deletecon(id):
     db.session.commit()
     return redirect("/")
 
+@app.route('/updateecon/<int:id>', methods=["GET", "POST"])
+def updatecon(id):
+    contact=Contact.query.get_or_404(id)
+    if request.method=="POST":
+        contact.contact = request.form['contact']
+        contact.contact_info = request.form['contact_info']
+        try:
+            db.session.commit()
+            return redirect("/")
+        except:
+            return "Sehvoldu"
+
+    return render_template ("/admin/updateecon.html", contact=contact)
+    
