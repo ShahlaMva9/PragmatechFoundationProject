@@ -196,3 +196,7 @@ Icerisinde bir data saxlayanlar:Primitive data type
 
 
 [google](https://github.com/Tural-91/PragmatechFoundationProject)
+
+- 1
+- 2
+- 3
