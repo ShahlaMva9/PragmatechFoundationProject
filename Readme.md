@@ -190,3 +190,9 @@ Icerisinde bir data saxlayanlar:Primitive data type
 # Hackerranq link
 
 (Hackerrangprofile)[https://www.hackerrank.com/sehlameherremov1]
+
+
+
+
+
+[google](https://github.com/Tural-91/PragmatechFoundationProject)
